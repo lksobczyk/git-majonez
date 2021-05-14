@@ -1,0 +1,33 @@
+11 mkdir git-majonez
+12 cd git-majonez
+13 git init
+14 touch main.cpp
+15 git add main.cpp
+16 git commit -m "Initial commit"
+17 git status
+18 git add main.cpp
+19 git commit -m "Farewell changed"
+20 git status
+21 git remote add origin https://github.com/lksobczyk/git-majonez.git
+22 git push -u origin master
+23 git branch cs
+24 git checkout cs
+25 git status
+26 git reset 8c8055a
+27 git log
+28 git checkout -- main.cpp
+29 git status
+30 git add main.cpp
+31 git commit -m"Greetings"
+32 git push origin cs
+33 git checkout master
+34 git merge cs
+35 git status
+36 git add main.cpp
+37 git merge cs
+38 git commit -m"Merge branch 'cs'"
+39 git status
+40 git merge cs
+41 git log
+42 history | tail -n32 > history.txt
+
